@@ -1,4 +1,4 @@
-# EXPERIMENT-04-INTERUPT-GENERATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR
+# EXPERIMENT-04-INTERRUPT-GENERATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR
 
 ###  DATE: 
 
@@ -90,30 +90,22 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 10. once the project is bulild 
 ![image](https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png)
 
-11. click on debug option 
-![image](https://user-images.githubusercontent.com/36288975/226189625-37daa9a3-62e9-42b5-a5ce-2ac63345905b.png)
+11. connect the iot board to power supply and usb
 
-12. connect the  iot board to power supply and usb 
+12. After connecting open the STM cube programmer
 
-13. After connecting open the STM cube programmer 
-![image](https://user-images.githubusercontent.com/36288975/227599356-9c465b7e-6bd0-436b-b4e8-742ed25e06ce.png)
-
-14. click on UART and click on connect 
-![image](https://user-images.githubusercontent.com/36288975/227599458-26976d4a-f2d4-49f0-a49f-31f46eb15761.png)
-
-15. once it is connected , click on Erasing and programming option 
-![image](https://user-images.githubusercontent.com/36288975/227599531-f03d277e-440f-4f8a-8875-97f8e8058c71.png)
-
-16. flash the bin or hex file as shown below by switching the switch to flash mode 
-
-![image](https://user-images.githubusercontent.com/36288975/227599656-dc4a635f-b5f1-44c8-84c5-ee0a592fa184.png)
+![Screenshot 2025-03-11 135208](https://github.com/user-attachments/assets/bb67ab6b-81a5-450c-b170-4276a9b87ef2)
 
 
-17. check for execution of the output by switching the board to run mode 
-18. click on the serial port utility 
+13. Connect the STM board through the COM port, then upload the corresponding project ELF file/Hex file or Bin file in Erasing & Programming Window,while ensuring the board is in flash mode, and click on 'Start Program'.
+    ![image](https://github.com/user-attachments/assets/9383531d-8204-4697-9321-55afb6abee2e)
+
+14.  After the file download is complete, switch your board to run mode and press the reset button to see the output
+
+15. click on the serial port utility 
 ![image](https://github.com/user-attachments/assets/72d35bbb-5261-4986-a24f-cfa2c00e26d6)
 
-19. click on the run to observe the values 
+16. click on the run to observe the values 
 
 
   
