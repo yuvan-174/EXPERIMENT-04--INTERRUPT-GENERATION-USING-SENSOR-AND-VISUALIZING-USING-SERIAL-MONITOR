@@ -29,6 +29,7 @@ ON (Active) when it detects an object
 OFF (Inactive) when it doesn’t detect any object
 
 ![image](https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/9bf61298-1deb-48d7-b88f-bd08e3cc6a83)
+
 Now that we have a little idea about its works, let’s take a look at how to interface it with evive and see it in action.
 
 Connect VCC pin to the +5V pin on evive.
@@ -50,22 +51,30 @@ The system runs the ISR and then goes back to the main program. The NVIC and EXT
  
 Interrupt Lines (EXTI0-EXTI15)
 The STM32 ARM microcontroller features 23 event sources which are divided into two sections. The first section corresponds t external pins on each port which are P0-P15. The second section corresponds to RTC, ethernet, USB interrupts. Therefore, in the first section, we have 16 lines corresponding to line0 till line15. All of these map to a pin number.
+
 ![image](https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/1110746f-6be2-4d12-9a34-66004e4b307b)
 
 
 The diagram below shows how the GPIO pins are connected to the 16 interrupt lines:
+
 ## Procedure:
- 1. click on STM 32 CUBE IDE, the following screen will appear 
+
+ 1. click on STM 32 CUBE IDE, the following screen will appear
+    
  ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
 
- 2. click on FILE, click on new stm 32 project 
+ 2. click on FILE, click on new stm 32 project
+  
  ![image](https://user-images.githubusercontent.com/36288975/226189215-2d13ebfb-507f-44fc-b772-02232e97c0e3.png)
+ 
 ![image](https://user-images.githubusercontent.com/36288975/226189230-bf2d90dd-9695-4aaf-b2a6-6d66454e81fc.png)
+
 3. select the target to be programmed  as shown below and click on next 
 
 ![Screenshot 2025-03-11 134231](https://github.com/user-attachments/assets/09e61f3d-224f-4ca8-96d4-7336869df5c7)
 
 4.select the program name 
+
 ![image](https://user-images.githubusercontent.com/36288975/226189316-09832a30-4d1a-4d4f-b8ad-2dc28f137711.png)
 
 
@@ -75,19 +84,25 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 
 
 6.select the appropriate pins as gipo, in or out, USART or required options and configure 
+
 ![Screenshot 2025-03-11 134617](https://github.com/user-attachments/assets/125ee548-30b1-4c88-932f-adf07984522f)
 ![Screenshot 2025-03-11 134642](https://github.com/user-attachments/assets/0adfbb58-4cad-408a-9300-f4808b53cac4)
 
 
 7.click on cntrl+S , automaticall C program will be generated 
+
 ![Screenshot 2025-03-11 134709](https://github.com/user-attachments/assets/70b83b79-1569-4f14-99d5-e2adbb4e692d)
 
-8. edit the program and as per required 
+8. edit the program and as per required
+   
 ![image](https://user-images.githubusercontent.com/36288975/226189461-a573e62f-a109-4631-a250-a20925758fe0.png)
 
-9. use project and build all 
+9. use project and build all
+    
 ![image](https://user-images.githubusercontent.com/36288975/226189554-3f7101ac-3f41-48fc-abc7-480bd6218dec.png)
-10. once the project is bulild 
+
+10. once the project is build
+    
 ![image](https://user-images.githubusercontent.com/36288975/226189577-c61cc1eb-3990-4968-8aa6-aefffc766b70.png)
 
 11. connect the iot board to power supply and usb
@@ -98,6 +113,7 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 
 
 13. Connect the STM board through the COM port, then upload the corresponding project ELF file/Hex file or Bin file in Erasing & Programming Window,while ensuring the board is in flash mode, and click on 'Start Program'.
+
     ![image](https://github.com/user-attachments/assets/9383531d-8204-4697-9321-55afb6abee2e)
 
 14.  After the file download is complete, switch your board to run mode and press the reset button to see the output
@@ -106,9 +122,7 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 ![image](https://github.com/user-attachments/assets/72d35bbb-5261-4986-a24f-cfa2c00e26d6)
 
 16. click on the run to observe the values 
-
-
-  
+ 
 
 ## STM 32 CUBE PROGRAM :
 
